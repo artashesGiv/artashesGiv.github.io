@@ -1,0 +1,28 @@
+.input {
+    background-color: var(--system-color-white);
+    height: 46px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding: 0 16px;
+}
+
+.input > input {
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+    font-size: 16px;
+    line-height: 130%;
+}
+
+.input > input::placeholder {
+    transform: translateY(1px);
+    font-size: 16px;
+    line-height: 130%;
+    color: var(--text-color-secondary);
+}
+
+.input > input:focus, .input > input:active {
+    border: none;
+    outline: none;
+}

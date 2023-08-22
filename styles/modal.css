@@ -1,0 +1,135 @@
+.contact-modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 10ms ease-in-out;
+}
+
+.contact-modal__overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(34, 36, 39, 0.20);
+}
+
+.contact-modal__content {
+    position: absolute;
+    width: 400px;
+    padding: 40px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background-color: var(--system-color-white);
+}
+
+.contact-modal__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.contact-modal__title {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 120%;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contact-modal__form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+}
+
+.contact-modal__button {
+    height: 46px;
+    width: 100%;
+    background-color: var(--states-color-normal);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 130%;
+    color: var(--system-color-white);
+    margin-top: 20px;
+}
+
+.contact-modal__input {
+    border: 1px solid var(--system-color-brand-100);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    height: 46px;
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    transition: 0.3s ease border-color;
+}
+
+.contact-modal__item-form:nth-child(2) {
+    margin-top: 12px;
+}
+
+.contact-modal__input, .contact-modal__input::placeholder {
+    font-size: 15px;
+    line-height: 130%;
+}
+
+.contact-modal__input_error {
+    border-color: var(--system-color-error);
+}
+
+.contact-modal__checkbox {
+    display: none;
+}
+
+.contact-modal__item-form_checkbox span {
+    height: 24px;
+    width: 24px;
+    display: inline-block;
+    border: none;
+    position: relative;
+    -webkit-border-radius: 4px;
+    box-sizing: border-box;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding: 3px;
+}
+
+[type=checkbox]:not(:checked) + span {
+    border: 2px solid #afb0b2;
+}
+
+[type=checkbox]:checked + span {
+    border: none;
+    background-color: var(--states-color-normal);
+}
+
+[type=checkbox]:checked + span:before {
+    content: '✓';
+    position: absolute;
+    border: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: white;
+}
+
+.contact-modal__item-form_checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contact-modal__confirm-text {
+    font-size: 15px;
+    line-height: 130%;
+    margin-left: 12px;
+    width: 80%;
+}

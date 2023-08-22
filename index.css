@@ -1,0 +1,66 @@
+@import "styles/input.css";
+@import "styles/header.css";
+@import "styles/icon-button.css";
+@import "styles/cart.css";
+@import "styles/counter.css";
+@import "styles/modal.css";
+
+html {
+    font-family: 'TT Norms Pro', sans-serif;
+}
+
+body {
+    /*states*/
+    --states-color-normal: #8bbf1f;
+    --states-color-hover: #a9d44f;
+
+    /*text*/
+    --text-color-secondary: #5e6062;
+    --text-color-primary: #222427;
+
+    /*icon*/
+    --icon-color-primary: #222427;
+    --icon-color-accent: #ffffff;
+
+    /*system*/
+    --system-color-neutral: #e4e4e7;
+    --system-color-neutral-50: #f6f6fa;
+    --system-color-white: #ffffff;
+    --system-color-brand-200: #d2ee9a;
+    --system-color-brand-100: #e4e4e7;
+    --system-color-error: #eb5757;
+
+    background-color: gainsboro;
+
+    color: var(--text-color-primary);
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+button {
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.icon {
+    height: 24px;
+    width: 24px;
+}
+
+.add-cart {
+    height: 25px;
+    border: 1px solid #000;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding: 0 4px;
+}

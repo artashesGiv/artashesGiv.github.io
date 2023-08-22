@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+          integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://fonts.cdnfonts.com/css/tt-norms-pro" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>business-up</title>
+</head>
+<body>
+
+<header class="header">
+    <div class="header__section header__section-logo">
+        <img class="header-logo__image" src="assets/logo.svg" alt="logo" width="119" height="48"/>
+        <p class="header-logo__title">Интернет-магазин дверей в Нижнем Новгороде</p>
+    </div>
+
+    <div class="header__section header__section-search">
+        <label class="header-search input">
+            <img class="header-search__icon icon input_icon" src="assets/icons/search.svg" alt="icon"/>
+            <input class="header-search__input input_field" type="text" value="" placeholder="Поиск"/>
+        </label>
+    </div>
+
+    <div class="header__section header__section-address">
+        <div class="header-address">
+            <img class="header-address__icon icon" src="assets/icons/location.svg" alt="icon"/>
+            <p class="header-address__text">Нижний Новгород, ул. Уличная, 1, оф. 15</p>
+        </div>
+    </div>
+
+    <div class="header__section header__section-contacts">
+        <div class="header-contacts">
+            <div class="header-contacts__number">
+                <div class="header-contacts__icons">
+                    <img class="header-contacts__icon header-contacts__icon_telegramm icon"
+                         src="assets/icons/telegram.svg" alt="icon"/>
+                    <img class="header-contacts__icon header-contacts__icon_watsapp icon"
+                         src="assets/icons/watsapp.svg" alt="icon"/>
+                </div>
+                <p class="header-contacts__phone">8 (831) 219-97-81</p>
+            </div>
+            <button class="header-contacts__button">
+                Заказать звонок
+            </button>
+        </div>
+    </div>
+
+    <div class="header__section header__section-catalog">
+        <div class="header-catalog">
+            <div class="header-catalog__button">
+                <img class="header-catalog__icon icon" src="assets/icons/catalog.svg" alt="icon"/>
+                <p class="header-catalog__button-text">
+                    каталог
+                </p>
+            </div>
+            <p class="header-catalog__text">Более 3000 товаров</p>
+        </div>
+    </div>
+
+    <nav class="header__section header__section-points">
+        <ol class="header-points">
+            <li class="header-points__item">Акции</li>
+            <li class="header-points__item">доставка и Установка</li>
+            <li class="header-points__item">Оплата</li>
+            <li class="header-points__item">Сертификаты</li>
+            <li class="header-points__item">О нас</li>
+            <li class="header-points__item">Контакты</li>
+        </ol>
+    </nav>
+
+    <nav class="header__section header__section-menu">
+        <ol class="header-menu">
+            <li class="header-menu__button">
+                <button class="icon-button header-menu__button_compare">
+                    <img class="icon-button__icon icon" src="assets/icons/compare.svg" alt="icon"/>
+                    <p class="icon-button__badge">2</p>
+                </button>
+            </li>
+            <li class="header-menu__button">
+                <button class="icon-button header-menu__button_favourite">
+                    <img class="icon-button__icon icon" src="assets/icons/favourite.svg" alt="icon"/>
+                </button>
+            </li>
+            <li class="header-menu__button">
+                <button class="icon-button header-menu__button_cart">
+                    <img class="icon-button__icon icon" src="assets/icons/cart.svg" alt="icon"/>
+                    <p class="icon-button__badge">1</p>
+                </button>
+            </li>
+            <li class="header-menu__button">
+                <button class="icon-button header-menu__button_profile">
+                    <img class="icon-button__icon icon" src="assets/icons/profile.svg" alt="icon"/>
+                </button>
+            </li>
+        </ol>
+
+        <aside class="cart">
+            <ol class="cart__list">
+                <li class="cart__item product">
+                    <img src="assets/door.jpg" alt="product image" class="product__image"/>
+                    <div class="product__information">
+                        <p class="product__title">Браво-22 Snow Melinga / Magic Fog</p>
+                        <p class="product__category">Межкомнатная дверь</p>
+                    </div>
+                    <div class="product__price-information">
+                        <p class="product__price">18 600 ₽</p>
+                        <div class="product__count counter">
+                            <button class="counter__button counter__button_minus">-</button>
+                            <p class="counter__value">1</p>
+                            <button class="counter__button counter__button_plus">+</button>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+
+            <div class="cart__information">
+                <p class="cart__sum">Сумма заказа:
+                    <em>18 600</em>
+                    ₽
+                </p>
+                <button class="cart__button">Перейти к оформлению →</button>
+            </div>
+        </aside>
+    </nav>
+</header>
+
+<button class="add-cart">add in cart</button>
+<div class="contact-modal">
+    <div class="contact-modal__overlay"></div>
+    <div class="contact-modal__content">
+        <button class="icon-button contact-modal__close">
+            <img class="icon-button__icon icon" src="assets/icons/close.svg" alt="icon"/>
+        </button>
+
+        <h3 class="contact-modal__title">Заполните данные и мы свяжемся с вами в рабочее время и ответим на все
+            интересующие вопросы</h3>
+
+        <form class="contact-modal__form">
+            <label for="name" class="contact-modal__item-form">
+                <input name="name" type="text" id="name" class="contact-modal__input" placeholder="Имя*"/>
+            </label>
+            <label for="phone" class="contact-modal__item-form">
+                <input name="phone" type="text" id="phone" class="contact-modal__input" placeholder="Телефон*"/>
+            </label>
+            <label for="confirm" class="contact-modal__item-form contact-modal__item-form_checkbox">
+                <input name="confirm" type="checkbox" id="confirm" class="contact-modal__checkbox" value="1"/>
+                <span></span>
+                <p class="contact-modal__confirm-text">Даю свое согласие на обработку персональных данных</p>
+            </label>
+            <button class="contact-modal__button">Заказать звонок</button>
+        </form>
+    </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>

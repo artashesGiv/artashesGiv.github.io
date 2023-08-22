@@ -1,0 +1,32 @@
+.icon-button {
+    position: relative;
+    width: 44px;
+    height: 44px;
+}
+
+.icon-button__badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    height: 16px;
+    /*width: 16px;*/
+    box-sizing: border-box;
+    padding: 0 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background-color: var(--system-color-brand-200);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 130%;
+}
+
+@media (hover: hover), (min-width: 1366px) {
+    .icon-button {
+        transition: 0.3s ease background-color;
+    }
+
+    .icon-button:hover {
+        background-color: var(--system-color-neutral-50);
+    }
+}
